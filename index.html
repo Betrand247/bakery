@@ -1,0 +1,73 @@
+<?php
+include"db_connect.php";
+?>
+<!DOCTYPE html> 
+<html lang="en">
+     <head>
+         <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+         <title>Sweet Bites Bakery</title> 
+         <link rel="stylesheet" href="styles.css"> 
+         <link rel="stylesheet" href="./fontawesome/css/all.css"> 
+
+         
+        </head> 
+         <body> <!-- Navigation Bar --> 
+            <header> <div class="logo" >
+                <img src="images/bakery.jpg" alt="logo" height="100" width="100"></div>
+            </div>
+                <nav>
+                    <ul>
+                       <li><button><a href="index.html" >Home</a></button></li>
+                        <li><button><a href="menu.html" >Menu</a></button></li>
+                        <li><button><a href="about.html" >about</a></button></li>
+                        <li><button><a href="contact.html">Contact</a></button></li>
+                    </ul>
+                </nav>    
+            </header>
+            <div class="transparent-bg">
+            <!-- Hero Section --> 
+             <section id="home" class="hero"> 
+                    <h1>Freshly Baked Every Day</h1> 
+                    <p>Delicious cakes, pastries, and bread made with love.</p> 
+             </section>
+                    <section id="menu"> 
+                        <div class="special">
+                        <h2><u>Our Specials.</u></h2></div> 
+                    <div class="menu-items"> 
+                    <div class="item"> 
+                    <img src="images/cake.jpg" alt="Cake">
+                    <h3>Chocolate Cake</h3> 
+                    <p>Rich, moist, and full of chocolatey goodness.</p> </div> 
+                    <div class="item">
+                    <img src="images/croissant.jpg" alt="Croissant"> 
+                    <h3>Butter Croissant</h3> 
+                    <p>Flaky, buttery, and simply irresistible.</p> </div>
+                    <div class="item"> 
+                    <img src="images/bread.jpg" alt="bread"> 
+                    <h3>Fresh Bread</h3> 
+                    <p>Handcrafted daily using organic flour.</p> 
+                    </div> 
+                    </div>
+                    </section>
+                </section>
+                <a href="menu.html" class="btn">Veiw Menu</a>
+            </div>
+            <footer>
+                <a href="https://www.facebook.com/my page" target="_blank">
+                    <i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.facebook.com/my page" target="_blank">
+                     <i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://www.facebook.com/my page" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                     <p><h5>&copy; 2025 Sweet Bites Bakery. All rights reserved.</h5></p>
+                     <p><u><a href="policy.html" target="_blank">Privacy Policy</a></p><u> 
+           </footer> 
+           <?php
+           $sql="Select name FROM users";
+           $result=mysqli_query($conn,$sql);
+           while($row=mysqli_fetch_assoc($result)){
+            echo "<li>".$row['name']."</li>";}
+            ?>
+         </body> 
+ </html> 
+    

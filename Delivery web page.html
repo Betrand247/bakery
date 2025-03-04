@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bites Bakery - Delivery</title>
+    <link rel="stylesheet" href="Style.CSS">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sweet Bites Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu 1.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Freshly Baked Delicious and sweet pasteries, Delivered at Your Door step!</h2>
+        <p>Order your favorite treats and get them delivered fast.</p>
+        <a href="#order-form" class="order-btn">Order Now</a>
+    </section>
+
+    <section class="menu"> 
+        <h2>Our Best Sellers</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="images/cupcake.jpeg" alt="cupcake">
+                <h3>Cupcake</h3>
+                <p>500FCFA</p>
+            </div>
+            <div class="item">
+                <img src="images/bread.jpeg" alt="Sweet Bread">
+                <h3>Sweet Bread</h3>
+                <p>400FCFA</p>
+            </div>
+            <div class="item">
+                <img src="images/cookie.jpeg" alt="Cookies">     
+                <h3> Cookies</h3>
+                <p>500FCFA</p>
+            </div>
+            <div class="item">
+                <img src="images/Gateau.jpeg" alt="Gateau"> 
+                <h4>Gateau</h4>
+                <p>1000FCFA</p>
+            </div>
+            <div class="item">
+              <img src="images/Burgers.jpeg" alt="Burgers">
+              <h5>Burgers</h5>
+              <p>1000FCFA</p>
+            </div>
+            <div class="item">
+                <img src="images/french.jpeg" alt="French Bread">
+                <h6>French Bread</h6>
+                <p>200FCFA</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <h3>Select items:</h3>
+            <div class="menu items">
+                <label><input type="checkbox" class="item" data-name="cupcake"
+                    data-price="500FCFA"> Cupcake - 500FCFA</label><br>
+                    <label><input type="checkbox" class="item" data-name="Sweet bread"
+                        data-price="400FCFA">Sweet Bread - 400FCFA</label><br>
+                    <label><input type="checkbox" class="item" data-name="Cookies"
+                        data-price="500FCFA"> Cookies - 500FCFA </label><br>
+                        <label><input type="checkbox" class="item" data-name="Gateau"
+                            data-price="1000FCFA"> Gateau - 1000FCFA </label><br>   
+                            <label><input type="checkbox" class="item" data-name="Burgers"
+                                data-price="1000FCFA"> Burgers- 1000FCFA </label><br> 
+                                <label><input type="checkbox" class="item" data-name="French Bread"
+                                    data-price="200FCFA"> French Bread - 200FCFA </label><br>     
+            </div>
+            
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sweet Bites Bakery | Fresh Bakes Delivered</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.whole{
+    align-content: center;
+    font-style: italic;
+    align-items: center;
+    padding-top: 0%;
+    background-color: blanchedalmond;
+}
+/*this is for the headr section*/
+.header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(184, 128, 128);
+    justify-content: space-between;
+    position: fixed;
+    width: 99%;
+}
+.logo img{
+    width: 40%;
+    heigth: 40%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.text1{
+    color:beige
+}
+/*this is for the fixed position*/
+
+.position{
+    justify-content: space-between;
+    padding-top: 5%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+}   
+
+/*this is the order section of the web*/
+.gallery{
+    padding-top: 3%;
+    border-radius: 20%;
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.gallery1{
+    padding-top: 10%;
+    border-radius: 20%;
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+    padding-top: 0%;
+    border-radius: 20%;
+    padding-inline: 2%;
+}
+.card{
+    background-color: rgb(245, 239, 239);
+    /* width: 20%; */
+    justify-items: center;
+    justify-content: center;
+    /* display: flex; */
+}
+.container img{
+    width: 100%;
+    heigth: 70%;
+    object-fit: cover;
+    transition:all ease-in-out 0.5s
+}
+
+.container img:hover {
+    width: 25%;
+}
+.order button{
+    border-color: rgb(0, 255, 34);
+    background-color: transparent;
+    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    padding: 3px 7px;
+}
+/*download logo*/
+.downloadlogo img{
+    align-contents: center; 
+
+}
+.downloadlogo img{
+    width: 10%;
+    height: 10%;
+    align-contents: center;
+    justify-content: space-between;
+}
+.end{
+    font-size: larger;
+    text-align: center;
+}

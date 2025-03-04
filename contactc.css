@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>contact us</title>
+<style>
+.fa-facebook{
+    background:blue;
+    padding:5px;
+}
+.fa-instagram{
+    background:rgb(238, 23, 88);
+    padding:5px;
+}
+.fa-twitter{
+    background:black;
+    padding:5px;
+}
+.fa-whatsapp{
+    background:green;
+    padding:5px;
+}
+</style>
+</head>
+</html>

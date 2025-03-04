@@ -1,0 +1,127 @@
+.whole{
+    align-content: center;
+    font-style: italic;
+    align-items: center;
+    padding-top: 0%;
+}
+/*this is for the headr section*/
+.header{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(23, 21, 184);
+    justify-content: space-between;
+    position: fixed;
+    width: 99%;
+}
+
+.text1{
+    color:beige
+}
+/*bordermargin*/
+.dermar{
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: black;
+}
+/*this is for the fixed position*/
+
+.position{
+    justify-content: space-between;
+    padding-top: 5%;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    font-size: 30px;
+    width: 99%;
+}   
+/*this is for the background picture*/
+.backgroundpicture{
+    background-image:url("./images/bread.jpeg");
+    padding-bottom: 20%;
+    background-size: cover;
+    padding-left: 20%;
+    padding-right: 10%;
+    border-radius: 50%;
+    width: 50%;
+    height: 30%;
+    align-items: center;
+    font-size: 30px;
+}
+.backgroundtext{
+    padding-top: 10%;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+.backgroundpicture{
+    padding-left: 30%;
+    padding-bottom: 10%;
+}
+
+/*this is the order section of the web*/
+.gallery{
+    padding-top: 3%;
+    border-radius: 20%;
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.gallery1{
+    padding-top: 10%;
+    border-radius: 20%;
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.text{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+    padding-top: 0%;
+    border-radius: 20%;
+    padding-inline: 2%;
+}
+.card{
+    background-color: rgb(245, 239, 239);
+    /* width: 20%; */
+    justify-items: center;
+    justify-content: center;
+    /* display: flex; */
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:all ease-in-out 0.5s
+}
+
+.container img:hover {
+    width: 25%;
+}
+.order button{
+    border-color: rgb(0, 255, 34);
+    background-color: transparent;
+    border-radius: 10%;
+    color: rgb(0, 0, 0);
+    padding: 3px 7px;
+}
+
+.end{
+    font-size: larger;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.endtext{
+    color: rgb(155, 163, 157);
+}

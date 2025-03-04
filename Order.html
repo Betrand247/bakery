@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="font/fontawesome/css/all.css">
+<link rel="stylesheet" href="styles.css"> 
+<title>Order Now</title>
+</head>
+<header>
+    <div class="logo">
+        <img src="bakery.jpg" alt="logo" height="100" width="100"></div>
+    </div>
+       <nav>
+           <ul>
+              <li><button><a href="index.html" >Home</a></button></li>
+               <li><button><a href="menu.html">Menu</a></button></li>
+               <li><button><a href="about.html">about</a></button></li>
+               <li><button><a href="contact.html ">Contact</a></button></li>
+           </ul>
+       </nav>    
+    </header>
+<body>
+    <div class="transparent-bg">
+<div class="order-container">
+    <h1 style="color: azure;">Place Your Order</h1>
+
+    <form id="order-form">
+        <label for="name" style="color: azure;">Name:</label><br>
+    <input type="text" id="name" name="name" reguired><br><br>
+
+    <label for="email" style="color: azure;">Email:</label><br>
+    <input type="email" id="email" name="email" reguired><br><br>
+
+    <label for="phone" style="color: azure;">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+<p>
+    <label for="order-items" style="color: azure;">Select Order Items:</label>
+</p>
+    <select id="order-items" multiple>
+        
+        <option value="Cake">Cake</option>
+        <option value="Croissant">Croissant</option>
+        <option value="Cupcake">Cupcake</option>
+        <option value="Pastry">Pastry</option>
+        <option value="French Bread">French Bread</option>
+    </select><br><br>
+    <button id="add-order-items">Add Order Item</button>
+    <ul id="order-list"></ul>
+    <input type="submit" value="Place Order">
+    </form>
+    <div id="order-summary"></div>
+</div>
+    </div>
+<footer>
+    <a href="https://www.facebook.com/my page" target="_blank">
+        <i class="fab fa-instagram"></i></a> 
+        <a href="https://www.facebook.com/my page" target="_blank">
+         <i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.facebook.com/my page" target="_blank">
+            <i class="fab fa-twitter"></i></a>
+         <p><h5>&copy; 2025 Sweet Bites Bakery. All rights reserved.</h5></p>
+</footer> 
+</body>
+</html>

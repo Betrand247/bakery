@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Interactive Order Page</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin:0;
+  padding:20px;
+  background-color:white;
+  align-items: center;
+  
+}
+h1{
+ color:#333;
+ margin-bottom: 20px;
+  }
+
+  img{
+    max-width:100%;
+    height:100px;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+
+header nav a, footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+nav{
+   margin:20px;
+   }
+nav a{
+   margin:0 15px;
+   color:orangered;
+   text-decoration: aliceblue;
+ }
+h1{
+    text-align:center;
+    color:black;
+    margin:20px;
+    padding:20px;
+    }
+.fa:hover{
+  opacity:1;
+  }
+.fa-facebook{
+ background:#007bb5;
+ color:white;
+ }
+.fa-instagram{
+ background:#cb2027;
+ color:white;
+}
+.fa-whatsapp{
+ background:green;
+ color:white;
+ }
+.fa-twitter{
+ background:black;
+ color:white;
+  }
+.fa{
+ padding:10px;
+ font-size:20px;
+ width:30px;
+ text-decoration:none;
+ margin:5px 60px;
+    }
+form{
+ display:flex;
+ flex-direction: column;
+    }
+label{
+margin-bottom: 5px;
+color:#555;
+    }
+input, textarea{
+ margin-bottom: 15px;
+ padding:10px;
+ border:1px solid#ccc;
+ border-radius: 4px;
+    }
+.footer{
+  background:orangered;
+ padding:20px;
+ color:azure;
+ position:relative;
+ bottom:0%;
+ width:100%;
+ text-align: center;
+}
+button{
+ background-color:orangered;
+ color:#fff;
+ padding:10px 20px;
+ border: none;
+border-radius:5px;
+cursor:pointer;
+  }
+ .button:hover{
+        background-color:blue;
+   }
+   @media(max-width:600px){
+    .container{width: 90%}
+   }
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px; 
+  align-items: center;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100px; 
+}
+
+.order-box {
+  border: 2px solid #007bff;
+  padding: 10px;
+  width: 300px; 
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+footer nav {
+    margin-top: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: orangered;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/images/sweetbites.jpg" alt="Logo" class="logo">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Order</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+<h1>Order Your Items</h1>
+  
+<div class="item-list">
+  <div class="item" data-name="Cake" data-price="10000">Cake (10000FCFA)</div>
+  <div class="item" data-name="Croissant" data-price="500">Croissant (500FCFA)</div>
+  <div class="item" data-name="Cupcake" data-price="100">Cupcake (100FCFA)</div>
+  <div class="item" data-name="Pastry" data-price="350">Pastry (350FCFA)</div>
+  <div class="item" data-name="French Bread" data-price="200">French Bread (200FCFA)</div>
+</div>
+
+    <center>
+<div class="order-box">
+  <h2>Your Order</h2>
+  <div id="order-items">
+    <!-- Order items will be dynamically added here -->
+  </div>
+  <div class="total">
+    Total:<span id="total-amount">0.00</span>  FCFA
+    </div><br><br>
+
+    <br>
+    <form action="#"method="post">
+      <center>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" reguired><br><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email" reguired><br><br>
+  
+      <label for="whatsapp">Whatsapp:</label><br>
+      <input type="text" id="whatsapp" name="whatsapp" reguired><br><br>
+  
+      <label for="message">Delivery Address:</label><br>
+      <input type="text" id="message" name="message" reguired><br><br>
+  
+     
+      </center>
+  </form>
+  <button class="button" onclick="window.location.href='payment.html';">Send Order</button>
+</div>
+
+
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-whatsapp"></a>
+<a href="#" class="fa fa-twitter"></a>
+</center>
+
+
+<footer class="footer">
+    <p>&copy;Sweet Bites. All rights reserved.</p>
+    </footer>
+
+
+<script>
+const itemList = document.querySelector('.item-list');
+const orderItemsDiv = document.getElementById('order-items');
+const totalAmountSpan = document.getElementById('total-amount');
+
+let order = {}; // Store items and their quantities
+let totalPrice = 0;
+
+itemList.addEventListener('click', function(event) {
+  if (event.target.classList.contains('item')) {
+    const itemName = event.target.dataset.name;
+    const itemPrice = parseFloat(event.target.dataset.price);
+
+    if (order[itemName]) {
+      order[itemName].quantity++;
+    } else {
+      order[itemName] = { quantity: 1, price: itemPrice };
+    }
+
+    updateOrderDisplay();
+  }
+});
+
+
+function updateOrderDisplay() {
+  orderItemsDiv.innerHTML = ''; // Clear the order display
+  totalPrice = 0; // Reset total price
+
+  for (const itemName in order) {
+    if (order.hasOwnProperty(itemName)) {
+      const item = order[itemName];
+      const itemDiv = document.createElement('div');
+      itemDiv.classList.add('order-item');
+      itemDiv.innerHTML = `
+        <span>${itemName}</span>
+        <div class="quantity-controls">
+          <button class="quantity-button minus" data-item="${itemName}">-</button>
+          <span>${item.quantity}</span>
+          <button class="quantity-button plus" data-item="${itemName}">+</button>
+        </div>
+      `;
+      orderItemsDiv.appendChild(itemDiv);
+
+      totalPrice += item.price * item.quantity;
+    }
+  }
+
+  totalAmountSpan.textContent = totalPrice.toFixed(2); // Update total
+}
+
+
+orderItemsDiv.addEventListener('click', function(event) {
+  if (event.target.classList.contains('quantity-button')) {
+    const itemName = event.target.dataset.item;
+
+    if (event.target.classList.contains('plus')) {
+      order[itemName].quantity++;
+    } else if (event.target.classList.contains('minus')) {
+      order[itemName].quantity--;
+      if (order[itemName].quantity <= 0) {
+        delete order[itemName]; // Remove item if quantity reaches 0
+      }
+    }
+
+    updateOrderDisplay();
+  }
+});
+
+
+</script>
+
+</body>
+</html>
