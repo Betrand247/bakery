@@ -4,7 +4,6 @@ margin: 0;
 padding: 0; 
 text-align: center;
 cursor: cell;
-background-image: url(bakery2.jpg);
 opacity:1; 
 background-color: rgba(0, 0, 0, .5);
 background-size: contain;
@@ -44,8 +43,7 @@ font-weight: bold;
 font-style:oblique;
 font-size: 15px; } 
 /* Hero Section */ 
-.hero { background: url('images/bakery.jpg') 
-no-repeat center center/cover; 
+.hero{
 color: white; 
 padding: 100px 20px; 
 } 
